@@ -1,0 +1,107 @@
+.homepage-wrapper {
+    height: 100%;
+    background-image: url('../../assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    background-position: center center;
+    margin-top: -65px;
+}
+
+.homepage-wrapper .text-holder {
+    width: 500px;
+    max-width: 100%;
+    position: fixed;
+    left: 10%;
+    bottom: 15%;
+}
+.homepage-wrapper .text-holder h1 {
+    color: #fff;
+    font-size: 6em;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 20px;
+}
+.homepage-wrapper .text-holder h2 {
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.homepage-wrapper .text-holder p {
+    margin: 0;
+    color: #fff;
+}
+
+.homepage-wrapper button {
+    background-color: #fff;
+    position: fixed;
+    right: 15%;
+    bottom: 17%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    transition: all 0.3s ease;
+    transform: scale(1); /* Initial scale */
+    box-shadow: none;
+}
+.homepage-wrapper button:hover { 
+    transform: scale(1.1); /* Grow slightly */
+    background-color: black;
+    color: white;
+    border-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glowing effect */
+}
+
+@media (max-width: 1200px) {
+    .homepage-wrapper button {
+        width: 160px;
+        height: 160px;  
+        font-size: 1.5em;  
+    }
+}
+
+@media (max-width: 1023px) {
+    .homepage-wrapper {
+        height: 100%;
+        background-image: url('../../assets/home/background-home-tablet.jpg');
+        background-size: cover;
+        padding: 0 30px;
+        margin-top: -82px;
+        padding-top: 150px;
+        text-align: center;
+    }
+    .homepage-wrapper .text-holder {
+        text-align: center;
+        position: unset;     
+        margin: 0 auto;
+    }
+    .homepage-wrapper .text-holder h1 {
+        font-size: 5em;
+    }
+    .homepage-wrapper button { 
+        position: unset;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .homepage-wrapper {
+        padding-top: 100px;
+    }
+    .homepage-wrapper .text-holder h1 {
+        font-size: 4.5em;  
+    }
+    .homepage-wrapper .text-holder h2 {
+        font-size: 1.3em;
+    }
+    .homepage-wrapper .text-holder p {
+        font-size: 0.9em;
+    }
+    .homepage-wrapper button {
+        width: 150px;
+        height: 150px;   
+        font-size: 1.3em; 
+    }
+}
+
