@@ -1,9 +1,15 @@
+:host {
+    display: flex;
+    height: 100vh;
+    margin-top: -75px;
+}
+
 .homepage-wrapper {
     height: 100%;
-    background-image: url('../../assets/home/background-home-desktop.jpg');
+    width: 100%;
+    background-image: url('../../../public/home/background-home-desktop.jpg');
     background-size: cover;
     background-position: center center;
-    margin-top: -65px;
 }
 
 .homepage-wrapper .text-holder {
@@ -64,11 +70,10 @@
 @media (max-width: 1023px) {
     .homepage-wrapper {
         height: 100%;
-        background-image: url('../../assets/home/background-home-tablet.jpg');
+        background-image: url('../../../public/home/background-home-tablet.jpg');
         background-size: cover;
         padding: 0 30px;
-        margin-top: -82px;
-        padding-top: 150px;
+        padding-top: 120px;
         text-align: center;
     }
     .homepage-wrapper .text-holder {
@@ -88,6 +93,9 @@
 @media (max-width: 767px) {
     .homepage-wrapper {
         padding-top: 100px;
+    }
+    .homepage-wrapper .text-holder {
+        width: 100%;
     }
     .homepage-wrapper .text-holder h1 {
         font-size: 4.5em;  

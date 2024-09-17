@@ -9,8 +9,8 @@
             <span class="bar"></span>
         </div>
         <ul class="nav-tabs" [class.active]="selected">
-            <li><a>Home</a></li>
-            <li><a>Destination</a></li>
+            <li><a [routerLink]="['/home']" routerLinkActive="selected">Home</a></li>
+            <li><a [routerLink]="['/destination']" routerLinkActive="selected">Destination</a></li>
             <li><a>Crew</a></li>
             <li><a>Technology</a></li>
         </ul>
