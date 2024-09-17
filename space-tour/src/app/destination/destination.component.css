@@ -1,0 +1,180 @@
+:host {
+    display: flex;
+    height: 100vh;
+    margin-top: -75px;
+}
+
+.destination-wrapper {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../../public/destination/background-destination-desktop.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.planets-holder {
+    padding-top: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.planets-holder .img-link {
+    margin: 40px;
+}
+.planets-holder .img-link img {
+    max-width: 250px;
+    transform: rotate(0deg); /* Start with no rotation */
+    transition: all 0.7s ease;
+    border-radius: 50%;
+    box-shadow: none;
+}
+.planets-holder .img-link:hover img {
+    transform: rotate(20deg); /* Start with no rotation */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glowing effect */
+}
+.planets-holder .img-link {
+    transition: all 0.7s ease;
+}
+
+.planet-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: 0 20vh;
+    padding: 0 5%;
+}
+.planet-holder .colomn {
+    width: 50%;
+    max-width: 500px;
+    padding: 0 50px;
+    text-align: center;
+}
+.planet-holder .colomn.img-holder img {
+    width: 100%;
+    max-width: 400px;
+    animation: planet-rotation 40s infinite linear;
+}
+.planet-holder .colomn.text-holder {
+    animation: vertical-rotate 2s linear;
+}
+.planet-holder .colomn.text-holder .close-icon {
+    text-align: right;
+}
+.planet-holder .colomn.text-holder .close-icon svg {
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+.planet-holder .colomn.text-holder .close-icon svg:hover {
+    opacity: 1;
+}
+.planet-holder .colomn.text-holder h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 4em;
+    margin-top: 0px;
+    color: #fff;
+}
+.planet-holder .colomn.text-holder p {
+    color: #fff;
+}
+.planet-holder .colomn.text-holder .descrition {
+    text-align: left;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+.planet-holder .colomn.text-holder .distance-and-time {
+    display: flex;
+    width: 100%;
+}
+.planet-holder .colomn.text-holder .distance-and-time h2 {
+    color: #fff;
+    font-weight: 300;
+}
+.planet-holder .colomn.text-holder .distance-and-time .distance {
+    width: 50%;
+    text-align: left;
+}
+.planet-holder .colomn.text-holder .distance-and-time .avg-time {
+    width: 50%;
+    text-align: right;
+}
+
+@keyframes vertical-rotate {
+    0% {
+        transform: rotateY(50deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+@keyframes planet-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1400px) {
+    .planets-holder .img-link {
+        margin: 30px;
+    }
+    .planets-holder .img-link img {
+        max-width: 230px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .planets-holder .img-link img {
+        max-width: 190px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .planets-holder {
+        padding-top: 15vh;
+    }
+    .planet-holder {
+        padding: 0 2%;
+    }
+    .planet-holder .colomn.text-holder h1 {
+        font-size: 3em;
+    }
+    .planet-holder .colomn {
+        padding: 0 30px;
+    }
+    .planet-holder .colomn.text-holder .distance-and-time h2 {
+        font-size: 1.3em;
+    }
+    .planet-holder .colomn.text-holder p {
+       font-size: 0.9em;
+    }
+}
+
+@media (max-width: 767px) {
+    :host {
+        height: auto;
+    }
+    .destination-wrapper {
+      min-height: 130vh;
+    }
+    .planet-holder {
+        flex-wrap: wrap;
+        translate: 0 15vh;
+    }
+    .planet-holder .colomn {
+        width: 80%;
+    }
+    .planet-holder .colomn.img-holder {
+        width: 60%;
+    }
+    .planet-holder .colomn.text-holder .descrition {
+        text-align: center;
+    }
+    .planet-holder .colomn.text-holder {
+        margin-top: 40px;
+    }
+}
+

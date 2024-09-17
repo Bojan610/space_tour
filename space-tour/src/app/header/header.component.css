@@ -1,5 +1,6 @@
 nav {
     padding: 20px;
+    height: 100%;
 }
 .nav-bar-holder {
     display: inline-block;
@@ -33,7 +34,8 @@ nav .nav-tabs {
     transition: border-color ease-in-out 0.3s;
 }
 
-.nav-tabs a:hover {
+.nav-tabs a:hover,
+.nav-tabs a.selected {
     border-color: #fff;
     cursor: pointer;
 }
