@@ -1,0 +1,21 @@
+<div class="crew-wrapper">
+    <div class="slideshow">
+        <div [style.transform]="'translateX(-' + currentIndex * 100 + '%)'" class="wrapper">
+            <div *ngFor="let member of crew" class="content">
+                <div class="text-holder colomn">
+                    <h2>{{member.position}}</h2>
+                    <h1>{{member.name}}</h1>
+                    <p>{{member.description}}</p>
+                </div>
+                <div class="img-holder colomn">
+                    <img [src]="'crew/' + member.image" [alt]="member.name"/>
+                </div>        
+            </div>
+        </div>
+        <div class="dots">
+            <ul>
+                <li *ngFor="let member of crew" [class.active]="member.id === currentIndex.toString()" (click)="onSelectSlide(member.id)"></li>
+            </ul>
+        </div>
+    </div>
+</div>

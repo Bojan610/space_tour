@@ -1,0 +1,91 @@
+:host {
+    display: flex;
+    height: 100vh;
+    margin-top: -75px;
+}
+
+.crew-wrapper {
+    height: 100%;
+    width: 100%;
+    background-image: url('../../../public/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.crew-wrapper h1,
+.crew-wrapper h2,
+.crew-wrapper p {
+    color: #fff;
+    font-weight: 300;
+}
+.crew-wrapper h1 {
+    text-transform: uppercase;
+}
+.crew-wrapper h2 {
+    text-transform: uppercase;
+    color: #9f9fa0;
+}
+.crew-wrapper .slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    translate: 0% 20vh;
+}
+.crew-wrapper .slideshow .wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.crew-wrapper .slideshow .content {
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+}
+.crew-wrapper .slideshow .colomn {
+    width: 50%;
+    padding: 0 4%;
+}
+.crew-wrapper .slideshow .colomn.img-holder {
+    text-align: center;
+}
+.crew-wrapper .slideshow .colomn.img-holder img {
+    width: 100%;
+    max-width: 300px;
+}
+.crew-wrapper .slideshow .dots {
+    width: 50%;
+    margin: auto;
+}
+.crew-wrapper .slideshow .dots ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin: 0;
+}
+.crew-wrapper .slideshow .dots ul li {
+    background-color: transparent;
+    border: 1px solid #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: all 0.2s ease;
+}
+.crew-wrapper .slideshow .dots ul li.active,
+.crew-wrapper .slideshow .dots ul li:hover {
+    background-color: #fff;
+}
+
+@media (max-width: 767px) {
+    .crew-wrapper h1 {
+        font-size: 1.5em;
+    }
+    .crew-wrapper h2 {
+        font-size: 1.3em;
+    }
+    .crew-wrapper p {
+        font-size: 0.9em;
+    }
+}

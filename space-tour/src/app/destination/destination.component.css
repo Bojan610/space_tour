@@ -95,9 +95,15 @@
     width: 50%;
     text-align: left;
 }
+.planet-holder .colomn.text-holder .distance-and-time .distance p {
+    color: #9f9fa0;
+}
 .planet-holder .colomn.text-holder .distance-and-time .avg-time {
     width: 50%;
     text-align: right;
+}
+.planet-holder .colomn.text-holder .distance-and-time .avg-time p {
+    color: #9f9fa0;
 }
 
 @keyframes vertical-rotate {

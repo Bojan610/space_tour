@@ -1,6 +1,7 @@
 import { Routes } from "@angular/router";
 import { HomepageComponent } from "./homepage/homepage.component";
 import { DestinationComponent } from "./destination/destination.component";
+import { CrewComponent } from "./crew/crew.component";
 
 export const routes: Routes = [
     {
@@ -17,5 +18,10 @@ export const routes: Routes = [
         path: 'destination',
         component: DestinationComponent,
         title: 'Space Tour - Destination' 
+    },
+    {
+        path: 'crew',
+        component: CrewComponent,
+        title: 'Space Tour - Crew' 
     }
 ];
