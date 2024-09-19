@@ -2,6 +2,7 @@ import { Routes } from "@angular/router";
 import { HomepageComponent } from "./homepage/homepage.component";
 import { DestinationComponent } from "./destination/destination.component";
 import { CrewComponent } from "./crew/crew.component";
+import { TechnologyComponent } from "./technology/technology.component";
 
 export const routes: Routes = [
     {
@@ -23,5 +24,10 @@ export const routes: Routes = [
         path: 'crew',
         component: CrewComponent,
         title: 'Space Tour - Crew' 
+    },
+    {
+        path: 'technology',
+        component: TechnologyComponent,
+        title: 'Space Tour - Technology' 
     }
 ];
