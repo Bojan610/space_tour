@@ -1,0 +1,128 @@
+.planet-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    translate: 0 20vh;
+    padding: 0 5%;
+}
+.planet-holder .colomn {
+    width: 50%;
+    max-width: 500px;
+    padding: 0 50px;
+    text-align: center;
+}
+.planet-holder .colomn.img-holder img {
+    width: 100%;
+    max-width: 400px;
+    animation: planet-rotation 40s infinite linear;
+}
+.planet-holder .colomn.text-holder {
+    animation: vertical-rotate 2s linear;
+    text-align: left;
+    color: #fff;
+}
+.planet-holder .colomn.text-holder .close-icon {
+    text-align: right;
+}
+.planet-holder .colomn.text-holder .close-icon svg {
+    opacity: 0.5;
+    transition: all 0.2s ease;
+}
+.planet-holder .colomn.text-holder .close-icon svg:hover {
+    opacity: 1;
+}
+.planet-holder .colomn.text-holder h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 4em;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.planet-holder .colomn.text-holder .sub-tabs {
+    list-style: none;  /* Remove bullet points */
+    display: flex;     /* Align items in a row */
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.planet-holder .colomn.text-holder .sub-tabs li {
+    margin: 0;
+}
+.planet-holder .colomn.text-holder .sub-tabs li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-bottom: 2px solid transparent;
+    transition: border-color ease-in-out 0.3s;
+    text-transform: uppercase;
+}
+.planet-holder .colomn.text-holder .sub-tabs li a:hover,
+.planet-holder .colomn.text-holder .sub-tabs li a.selected {
+    border-color: #fff;
+    cursor: pointer;
+}
+
+@keyframes vertical-rotate {
+    0% {
+        transform: rotateY(50deg);
+    }
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+@keyframes planet-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1400px) {
+    .planet-holder .colomn.text-holder .sub-tabs li a {
+        padding: 5px 8px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .planet-holder .colomn.text-holder .sub-tabs li a {
+        padding: 5px 6px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 1023px) {
+    .planet-holder {
+        padding: 0 2%;
+    }
+    .planet-holder .colomn.text-holder h1 {
+        font-size: 3em;
+    }
+    .planet-holder .colomn {
+        padding: 0 20px;
+    }
+    .planet-holder .colomn.text-holder .sub-tabs li a {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 767px) {
+    .planet-holder {
+        flex-wrap: wrap;
+        translate: 0 15vh;
+        padding: 0;
+    }
+    .planet-holder .colomn {
+        width: 85%;
+    }
+    .planet-holder .colomn.img-holder {
+        width: 60%;
+    }
+    .planet-holder .colomn.text-holder {
+        margin-top: 30px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,42 @@
+.overview-wrapper .descrition {
+    text-align: left;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #fff;
+}
+.overview-wrapper .distance-and-time {
+    display: flex;
+    width: 100%;
+}
+.overview-wrapper .distance-and-time h2 {
+    color: #fff;
+    font-weight: 300;
+}
+.overview-wrapper .distance-and-time .distance {
+    width: 50%;
+    text-align: left;
+}
+.overview-wrapper .distance-and-time .distance p {
+    color: #9f9fa0;
+}
+.overview-wrapper .distance-and-time .avg-time {
+    width: 50%;
+    text-align: right;
+}
+.overview-wrapper .distance-and-time .avg-time p {
+    color: #9f9fa0;
+}
+
+@media (max-width: 1023px) {
+    .overview-wrapper .distance-and-time h2 {
+        font-size: 1.3em;
+    }
+    .overview-wrapper p {
+       font-size: 0.9em;
+    }
+}
+
+@media (max-width: 767px) {
+    .overview-wrapper .descrition {
+        text-align: center;
+    }
+}

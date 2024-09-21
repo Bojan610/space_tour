@@ -4,5 +4,7 @@ export interface Planet {
     image: string,
     descrition: string,
     avgDistance: string,
-    estTravelTime: string
+    estTravelTime: string, 
+    internalStructure: string,
+    surfaceGeology: string
 }

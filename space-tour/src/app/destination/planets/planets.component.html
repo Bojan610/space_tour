@@ -1,0 +1,5 @@
+<div class="planets-holder">
+    <a *ngFor="let planet of planets" class="img-link" [routerLink]="['/destination/', planet.name.toLowerCase()]" >
+        <img [src]="'destination/' + planet.image" [alt]="planet.name"/>
+    </a>      
+</div>

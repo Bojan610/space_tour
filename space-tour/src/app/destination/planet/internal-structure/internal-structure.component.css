@@ -1,0 +1,5 @@
+@media (max-width: 1023px) {
+    .internal-structure-wrapper p {
+       font-size: 0.9em;
+    }
+}

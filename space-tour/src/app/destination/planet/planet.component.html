@@ -1,0 +1,18 @@
+<div class="planet-holder">
+    <div class="img-holder colomn">
+        <img [src]="'destination/' + planet?.image" [alt]="planet?.name"/>
+    </div>
+    <div class="text-holder colomn">
+        <div class="close-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" (click)="closePlanet()"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+        </div>
+        <h1>{{planet?.name}}</h1>
+        <ul class="sub-tabs">
+            <li><a routerLink="overview" routerLinkActive="selected">Overview</a></li>
+            <li><a routerLink="internal-structure" routerLinkActive="selected">Internal Structure</a></li>
+            <li><a routerLink="surface-geology" routerLinkActive="selected">Surface Geology</a></li>       
+        </ul>
+
+        <router-outlet />   
+    </div>
+</div>

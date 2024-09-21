@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Technology } from "../models/technology.model";
 
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class TechnologyService {
     private technologies: Technology[] = [];
 

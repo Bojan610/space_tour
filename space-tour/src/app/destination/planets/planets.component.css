@@ -1,0 +1,44 @@
+.planets-holder {
+    padding-top: 30vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.planets-holder .img-link {
+    margin: 40px;
+}
+.planets-holder .img-link img {
+    max-width: 250px;
+    transform: rotate(0deg); /* Start with no rotation */
+    transition: all 0.7s ease;
+    border-radius: 50%;
+    box-shadow: none;
+}
+.planets-holder .img-link:hover img {
+    transform: rotate(20deg); /* Start with no rotation */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glowing effect */
+}
+.planets-holder .img-link {
+    transition: all 0.7s ease;
+}
+
+@media (max-width: 1400px) {
+    .planets-holder .img-link {
+        margin: 30px;
+    }
+    .planets-holder .img-link img {
+        max-width: 230px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .planets-holder .img-link img {
+        max-width: 190px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .planets-holder {
+        padding-top: 15vh;
+    }
+}

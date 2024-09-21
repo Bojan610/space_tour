@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { CrewMember } from "../models/crewMember.model";
 
-@Injectable({providedIn: 'root'})
+@Injectable()
 export class CrewService {
     private crew: CrewMember[] = [];
 

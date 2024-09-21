@@ -1,33 +1,3 @@
 <div class="destination-wrapper">
-    <div *ngIf="planetToShow; else fallback" class="planet-holder">
-        <div class="img-holder colomn">
-            <img [src]="'destination/' + planetToShow.image" [alt]="planetToShow.name"/>
-        </div>
-        <div class="text-holder colomn">
-            <div class="close-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" (click)="unselectPlanet()"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
-            </div>
-            <div class="descrition">
-                <h1>{{planetToShow.name}}</h1>
-                <p>{{planetToShow.descrition}}</p>
-            </div>
-            <div class="distance-and-time">
-                <div class="distance">
-                    <p>AVG DISTANCE</p>
-                    <h2>{{planetToShow.avgDistance}}</h2>
-                </div>
-                <div class="avg-time">
-                    <p>EST. TRAVEL TIME</p>
-                    <h2>{{planetToShow.estTravelTime}}</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <ng-template #fallback>
-        <div class="planets-holder">
-            <a *ngFor="let planet of planets" class="img-link" (click)="selectPlanet(planet)">
-                <img [src]="'destination/' + planet.image" [alt]="planet.name"/>
-            </a>      
-        </div>
-    </ng-template>
-</div>>
+    <router-outlet />
+</div>
