@@ -5,11 +5,11 @@
                 <li *ngFor="let technology of technologies" [class.active]="technology.id === selectedTechnology.id" (click)="onSelect(technology)">{{+technology.id + 1}}</li>
             </ul>>
         </div>
-        <div class="text-holder">
+        <div [@openClose]="state" class="text-holder">
             <h1>{{selectedTechnology.name}}</h1>
             <p>{{selectedTechnology.description}}</p>
         </div>
-        <div class="img-holder">
+        <div [@openClose]="state" class="img-holder">
             <img [src]="'technology/' + selectedTechnology.image" [alt]="selectedTechnology.name"/>
         </div>
     </div>

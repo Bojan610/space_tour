@@ -3,7 +3,7 @@ import { HomepageComponent } from "./homepage/homepage.component";
 import { DestinationComponent } from "./destination/destination.component";
 import { CrewComponent } from "./crew/crew.component";
 import { TechnologyComponent } from "./technology/technology.component";
-import { PlanetComponent } from "./destination/planet/planet.component";
+import { PlanetComponent, resolvePlanet } from "./destination/planet/planet.component";
 import { PlanetsComponent } from "./destination/planets/planets.component";
 import { OverviewComponent } from "./destination/planet/overview/overview.component";
 import { InternalStructureComponent } from "./destination/planet/internal-structure/internal-structure.component";
@@ -43,6 +43,7 @@ export const routes: Routes = [
                 path: ':planetName',
                 loadComponent: () => import('./destination/planet/planet.component').then(mod => mod.PlanetComponent), 
                 providers: [DestinationService],
+                resolve: { planet: resolvePlanet},
                 children: [
                     {
                         path: '',

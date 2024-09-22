@@ -13,6 +13,8 @@
             <li><a routerLink="surface-geology" routerLinkActive="selected">Surface Geology</a></li>       
         </ul>
 
-        <router-outlet />   
+        <div class="sub-tabs-content" [@routeAnimations]="o.isActivated ? o.activatedRoute : ''">
+            <router-outlet #o="outlet"/>  
+        </div> 
     </div>
 </div>

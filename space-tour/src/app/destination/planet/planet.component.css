@@ -63,6 +63,9 @@
     border-color: #fff;
     cursor: pointer;
 }
+.planet-holder .colomn.text-holder .sub-tabs-content {
+    min-height: 280px;
+}
 
 @keyframes vertical-rotate {
     0% {

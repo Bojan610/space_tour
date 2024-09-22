@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { Planet } from '../../../models/planet.model';
-import { DestinationService } from '../../../services/destination.service';
 
 @Component({
   selector: 'app-overview',
@@ -10,12 +9,5 @@ import { DestinationService } from '../../../services/destination.service';
   styleUrl: './overview.component.css'
 })
 export class OverviewComponent {
-  @Input({required: true}) planetName!:string;
-  planet?: Planet;
-
-  constructor(private destinationService: DestinationService) {}
-  
-  ngOnInit(): void {
-    this.planet = this.destinationService.getPlanet(this.planetName);
-  }
+  @Input({required: true}) planet?: Planet;
 }
