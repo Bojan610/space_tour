@@ -6,9 +6,11 @@
 }
 .planets-holder .img-link {
     margin: 40px;
+    width: 18%;
+    text-align: center;
 }
 .planets-holder .img-link img {
-    max-width: 250px;
+    width: 100%;
     transform: rotate(0deg); /* Start with no rotation */
     transition: all 0.7s ease;
     border-radius: 50%;
@@ -26,19 +28,19 @@
     .planets-holder .img-link {
         margin: 30px;
     }
-    .planets-holder .img-link img {
-        max-width: 230px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .planets-holder .img-link img {
-        max-width: 190px;
-    }
 }
 
 @media (max-width: 1023px) {
     .planets-holder {
         padding-top: 15vh;
+    }
+    .planets-holder .img-link {
+        width: 26%;
+    }
+}
+
+@media (max-width: 767px) {
+    .planets-holder .img-link {
+        width: 50%;
     }
 }

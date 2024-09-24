@@ -13,11 +13,11 @@
 }
 
 .homepage-wrapper .text-holder {
-    width: 500px;
+    width: 700px;
     max-width: 100%;
     position: fixed;
     left: 10%;
-    bottom: 15%;
+    top: 35vh;
 }
 .homepage-wrapper .text-holder h1 {
     color: #fff;
@@ -39,8 +39,8 @@
 .homepage-wrapper button {
     background-color: #fff;
     position: fixed;
-    right: 15%;
-    bottom: 17%;
+    left: 65%;
+    top: 45vh;
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -59,11 +59,25 @@
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Glowing effect */
 }
 
+@media (max-width: 1400px) {
+    .homepage-wrapper .text-holder {
+        width: 500px;
+        max-width: 100%;
+        position: fixed;
+        left: 10%;
+        top: 35vh;
+    }
+}
+
 @media (max-width: 1200px) {
+    .homepage-wrapper .text-holder {
+        top: 30vh;
+    }
     .homepage-wrapper button {
         width: 160px;
         height: 160px;  
         font-size: 1.5em;  
+        left: 75%;
     }
 }
 

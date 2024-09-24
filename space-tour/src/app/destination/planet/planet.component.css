@@ -7,13 +7,12 @@
 }
 .planet-holder .colomn {
     width: 50%;
-    max-width: 500px;
     padding: 0 50px;
     text-align: center;
 }
 .planet-holder .colomn.img-holder img {
-    width: 100%;
-    max-width: 400px;
+    width: 75%;
+    max-width: 500px;
     animation: planet-rotation 40s infinite linear;
 }
 .planet-holder .colomn.text-holder {
@@ -94,6 +93,9 @@
     .planet-holder .colomn.text-holder .sub-tabs li a {
         padding: 5px 6px;
         font-size: 0.8em;
+    }
+    .planet-holder .colomn.img-holder img {
+        width: 85%;
     }
 }
 

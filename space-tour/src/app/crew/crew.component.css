@@ -27,8 +27,7 @@
 }
 .crew-wrapper .slideshow {
     position: relative;
-    width: 100%;
-    max-width: 1200px;
+    width: 90%;
     margin: auto;
     overflow: hidden;
     translate: 0% 20vh;
@@ -50,8 +49,7 @@
     text-align: center;
 }
 .crew-wrapper .slideshow .colomn.img-holder img {
-    width: 100%;
-    max-width: 300px;
+    width: 60%;
 }
 .crew-wrapper .slideshow .dots {
     width: 50%;
@@ -78,6 +76,12 @@
     background-color: #fff;
 }
 
+@media (max-width: 1023px) {
+    .crew-wrapper .slideshow .colomn.img-holder img {
+        width: 90%;
+    }
+}
+
 @media (max-width: 767px) {
     .crew-wrapper h1 {
         font-size: 1.5em;
@@ -87,5 +91,11 @@
     }
     .crew-wrapper p {
         font-size: 0.9em;
+    }
+    .crew-wrapper .slideshow .colomn.img-holder img {
+        width: 100%;
+    }
+    .crew-wrapper .slideshow {
+        translate: 0% 10vh;
     }
 }
