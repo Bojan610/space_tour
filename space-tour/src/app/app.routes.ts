@@ -32,7 +32,7 @@ export const routes: Routes = [
             {
                 path: '',
                 redirectTo: 'planets',
-                pathMatch: 'prefix'
+                pathMatch: 'full'
             },
             {
                 path: 'planets',
@@ -48,7 +48,7 @@ export const routes: Routes = [
                     {
                         path: '',
                         redirectTo: 'overview',
-                        pathMatch: 'prefix'
+                        pathMatch: 'full'
                     },
                     {
                         path: 'overview',

@@ -7,7 +7,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
 @Component({
   selector: 'app-technology',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [NgFor],
   templateUrl: './technology.component.html',
   styleUrl: './technology.component.css',
   animations: [
